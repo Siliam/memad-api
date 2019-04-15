@@ -1,0 +1,20 @@
+{
+  "proto": {
+    "id": "?program",
+    "title": "$ebucore:title$required",
+    "keyword": "$ebucore:hasKeyword$var:__keyword",
+    "channel": {
+      "id": "?__channel_iri",
+      "name": "$ebucore:publicationChannelName$required"
+    }
+  },
+  "$where": [
+    "?pubevent a ebucore:PublicationEvent",
+    "?__channel_iri a ebucore:PublicationChannel",
+    "?pubevent ebucore:publishes ?program; ebucore:isReleasedBy ?__channel_iri",
+    "?pubevent ebucore:hasPublicationStartDateTime ?date"
+  ],
+  "$prefixes": {
+    "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+  }
+}
