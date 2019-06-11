@@ -1,0 +1,16 @@
+{
+  "proto": {
+    "id": "?_program_iri",
+    "title": "$ebucore:title$required"
+  },
+  "$where": [
+    "?_program_iri a ebucore:RadioProgram"
+  ],
+  "$prefixes": {
+    "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+  },
+  "grlc": {
+    "summary": "List of radio programs.",
+    "pagination": 50
+  }
+}
