@@ -13,7 +13,7 @@
     "?pubhist a ebucore:PublicationHistory",
     "?pubhist ebucore:hasPublicationEvent ?pubevent",
     "?pubevent a ebucore:PublicationEvent",
-    "?pubevent ebucore:publishes ?_program_iri",
+    "?pubevent ebucore:publishes ?program",
     "?pubevent ebucore:isReleasedBy ?__channel_iri",
     "?__channel_iri a ebucore:PublicationChannel"
   ],

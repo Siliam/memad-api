@@ -1,10 +1,10 @@
 {
   "proto": {
-    "id": "?_program_iri",
+    "id": "?program",
     "title": "$ebucore:title$required"
   },
   "$where": [
-    "?_program_iri a ebucore:RadioProgram"
+    "?program a ebucore:RadioProgramme"
   ],
   "$prefixes": {
     "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
