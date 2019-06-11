@@ -9,12 +9,11 @@
     }
   },
   "$where": [
-    "?pubevent a ebucore:PublicationEvent",
-    "?__channel_iri a ebucore:PublicationChannel",
-    "?pubevent ebucore:publishes ?program; ebucore:isReleasedBy ?__channel_iri",
-    "?pubevent ebucore:hasPublicationStartDateTime ?date"
+    "?program ebucore:hasPublicationHistory ?pubhist",
+    "?pubhist a ebucore:PublicationHistory",
+    "?pubhist ebucore:hasPublicationEvent ?pubevent;  ?ebucore:isReleasedBy ?__channel_iri",
+    "?__channel_iri a ebucore:PublicationChannel"
   ],
-  "$lang": "en;q=1, en-gb;q=0.5, en-us;q-0.4 *;q=0.1",
   "$prefixes": {
     "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
   },
