@@ -12,8 +12,9 @@
     "?program ebucore:hasPublicationHistory ?pubhist",
     "?pubhist a ebucore:PublicationHistory",
     "?pubhist ebucore:hasPublicationEvent ?pubevent",
-    "?pubhist a ebucore:PublicationEvent",
-    "?pubevent ?ebucore:isReleasedBy ?__channel_iri",
+    "?pubevent a ebucore:PublicationEvent",
+    "?pubevent ebucore:publishes ?program",
+    "?pubevent ebucore:isReleasedBy ?__channel_iri",
     "?__channel_iri a ebucore:PublicationChannel"
   ],
   "$prefixes": {
