@@ -5,7 +5,6 @@
       "fn" : "?fn",
       "title" : "$ebucore:title | ebucore:mainTitle",
       "description": "$ebucore:description",
-      "filename": "$ebucore:filename",
       "episodeNumber" : "$ebucore:episodeNumber",
       "tags": "$ebucore:hasKeyword",
       "genre": "$ebucore:hasGenre",
@@ -18,7 +17,7 @@
       "firstPublicationTime" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:hasPublicationStartDateTime"
     },
 "$where": ["?uri ebucore:filename ?fn"],
-    "$values": {
-      "fn": "MEDIA_2014_00773147.xml"
-    }
+"$prefixes": {
+    "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+  }
 }
