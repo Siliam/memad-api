@@ -1,0 +1,24 @@
+{
+  "proto":
+    {
+      "uri": "?uri$anchor",
+      "fn" : "?fn",
+      "title" : "$ebucore:title | ebucore:mainTitle",
+      "description": "$ebucore:description",
+      "filename": "$ebucore:filename",
+      "episodeNumber" : "$ebucore:episodeNumber",
+      "tags": "$ebucore:hasKeyword",
+      "genre": "$ebucore:hasGenre",
+      "languages" : "$ebucore:hasLanguage",
+      "workingTitle" : "$ebucore:workingTitle",
+      "theme" : "$ebucore:hasTheme",
+      "producer":"$ebucore:hasProducer",
+      "programmeTitle" : "$ebucore:hasEpisode / ebucore:title",
+      "firstPublicationChannel" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:isReleasedBy / ebucore:publicationChannelName",
+      "firstPublicationTime" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:hasPublicationStartDateTime"
+    },
+"$where": ["?uri ebucore:filename ?fn"],
+    "$values": {
+      "fn": "MEDIA_2014_00773147.xml"
+    }
+}
