@@ -16,7 +16,7 @@
       "firstPublicationChannel" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:isReleasedBy / ebucore:publicationChannelName",
       "firstPublicationTime" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:hasPublicationStartDateTime"
     },
-  "$where": ["?uri ebucore:filename ?fn"],
+  "$where": ["$uri ebucore:filename ?fn"],
   "$prefixes": {
       "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
   }
