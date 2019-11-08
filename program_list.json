@@ -1,7 +1,7 @@
 {
   "proto": {
     "id": "?program",
-    "title": "$ebucore:title$required$sample",
+    "title": "$ebucore:title$required$sample$var:title",
     "keyword": "$ebucore:hasKeyword$var:__keyword",
     "channel": {
       "id": "?__channel_iri",
