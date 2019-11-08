@@ -1,25 +1,23 @@
 {
   "proto": {
-    "id": "?program",
+    "part_uri": "$part",
+    "part_id": "$ebucore:hasIdentifier",
     "title": "$ebucore:title$required$bestlang",
-    "keyword": "$ebucore:hasKeyword$var:__keyword",
-    "channel": {
-      "id": "?__channel_iri",
-      "name": "$ebucore:publicationChannelName$required"
-    }
+    "duration": "$ebucore:duration",
+    "description": "$ebucore:description",
+    "lead": "$memad:lead",
+    "end": "$ebucore:end",
+    "keyword": "$ebucore:hasKeyword",
+    "genre": "$ebucore:hasGenre",
   },
   "$where": [
-    "?pubevent a ebucore:PublicationEvent",
-    "?__channel_iri a ebucore:PublicationChannel",
-    "?pubevent ebucore:publishes ?program; ebucore:isReleasedBy ?__channel_iri",
-    "?pubevent ebucore:hasPublicationStartDateTime ?date"
+    "$uri ebucore:hasIdentifier ?_identifier; ebucore:hasPart ?part",
+    "?part ebucore:start ?startTime",
   ],
-  "$lang": "en;q=1, en-gb;q=0.5, en-us;q-0.4 *;q=0.1",
   "$prefixes": {
     "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
   },
   "grlc": {
-    "summary": "List of programs.",
-    "pagination": 50
+    "summary": "List of parts for a given program.",
   }
 }

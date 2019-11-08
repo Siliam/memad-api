@@ -14,7 +14,6 @@
     "?pubevent ebucore:publishes ?program; ebucore:isReleasedBy ?__channel_iri",
     "?pubevent ebucore:hasPublicationStartDateTime ?date"
   ],
-  "$lang": "en;q=1, en-gb;q=0.5, en-us;q-0.4 *;q=0.1",
   "$prefixes": {
     "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
   },
