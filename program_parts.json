@@ -16,7 +16,8 @@
   ],
   "$filter": "lang(?title) != 'se'",
   "$prefixes": {
-    "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+    "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#",
+    "memad": "http://data.memad.eu/ontology#"
   },
   "grlc": {
     "summary": "List of parts for a given program."
