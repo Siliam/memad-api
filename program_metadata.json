@@ -21,7 +21,8 @@
     "?firstrun a memad:FirstRun; ebucore:publicationStartDateTime ?startDateTime."
   ],
   "$prefixes": {
-      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#",
+      "memad": "http://data.memad.eu/ontology#"
   },
   "grlc": {
     "summary": "Program Metadata API for Flow"
