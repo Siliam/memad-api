@@ -10,6 +10,7 @@
     "keyword": "$ebucore:hasKeyword",
     "genre": "$ebucore:hasGenre"
   },
+  "$from": "http://data.memad.eu/graph/data",
   "$where": [
     "?uri ebucore:hasIdentifier ?_identifier; ebucore:hasPart ?part",
     "?part ebucore:start ?startTime"
