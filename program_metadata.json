@@ -16,6 +16,7 @@
       "publicationChannel" : "$ebucore:hasPublicationHistory / ebucore:hasPublicationEvent / ebucore:isReleasedBy / ebucore:publicationChannelName",
       "firstPublicationTime" : "?startDateTime"
     },
+  "$from": "http://data.memad.eu/graph/data",
   "$where": [
     "?program ebucore:hasPublicationHistory / ebucore:hasPublicationEvent ?firstrun.",
     "?firstrun a memad:FirstRun; ebucore:publicationStartDateTime ?startDateTime."
