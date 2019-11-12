@@ -18,7 +18,7 @@
     },
   "$from": "http://data.memad.eu/graph/data",
   "$where": [
-    "?program ebucore:hasPublicationHistory / ebucore:hasPublicationEvent ?firstrun",
+    "?uri ebucore:hasPublicationHistory / ebucore:hasPublicationEvent ?firstrun",
     "?firstrun a memad:FirstRun; ebucore:publicationStartDateTime ?startDateTime"
   ],
   "$prefixes": {
