@@ -12,7 +12,7 @@
   },
   "$from": "http://data.memad.eu/graph/data",
   "$where": [
-    "?uri ebucore:hasIdentifier ?_identifier; ebucore:hasPart ?part",
+    "?uri ebucore:isInstantiatedBy / ebucore:filename ?_filename; ebucore:hasPart ?part",
     "?part ebucore:start ?startTime"
   ],
   "$filter": "lang(?title) != 'se'",
